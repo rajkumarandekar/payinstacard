@@ -22,7 +22,7 @@ mongoose
   });
 
 app.use(express.json());
-app.use(cors({ origin: "https://instacardf.onrender.com" }));
+app.use(cors({ origin: "http://localhost:3001" }));
 
 app.post("/api/signup", async (req, res) => {
   const { username, password, email, contact } = req.body;

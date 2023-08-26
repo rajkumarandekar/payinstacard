@@ -14,7 +14,7 @@ function Signup() {
 
   const signupHandle = async () => {
     try {
-      await axios.post("https://instacard-qqat.onrender.com", {
+      await axios.post("http://localhost:3000/api/signup", {
         username: username,
         password: password,
         email: email,
