@@ -16,7 +16,7 @@ function UserDetails() {
           Authorization: `Bearer ${token}`,
         };
         console.log("Headers:", headers); // Log the headers for debugging
-        const res = await axios.get("http://localhost:3000/api/userdetails", {
+        const res = await axios.get("https://instacard-qqat.onrender.com", {
           headers: headers,
         });
         setUserDetails(res.data);
