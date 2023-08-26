@@ -45,7 +45,7 @@ app.post("/api/signup", async (req, res) => {
     res.status(201).json({ message: "User SignUp Successfully" });
   } catch (err) {
     console.log(err.message);
-    res.status(500).json({ message: "SignUp failed" });
+    res.status(500).json({ message: "SignUp Failed" });
   }
 });
 
