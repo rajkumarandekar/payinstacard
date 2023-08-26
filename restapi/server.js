@@ -60,7 +60,7 @@ app.post("/api/login", async (req, res) => {
 
     const passwordMatch = await bcrypt.compare(password, user.password);
     if (!passwordMatch) {
-      return res.status(401).json({ message: "Inavalid credentials" });
+      return res.status(401).json({ message: "Inavalid Credentials" });
     }
 
     const token = jwt.sign({ userId: user._id }, "secret-key", {
