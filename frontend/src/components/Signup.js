@@ -21,7 +21,7 @@ function Signup() {
         contact: contact,
       });
 
-      console.log("Signup Successful");
+      console.log("Signup successful");
       alert("Successfully Signup !");
 
       navigate("/login");

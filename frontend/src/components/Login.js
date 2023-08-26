@@ -17,7 +17,7 @@ function Login() {
       });
       localStorage.setItem("token", response.data.token);
       console.log("Login Successful");
-      alert("Successfully LoggedIn");
+      alert("Successfully loggedIn");
       navigate("/userdetails");
     } catch (err) {
       console.log("Login error", err.response.data.message);
