@@ -11,10 +11,13 @@ function Login() {
 
   const loginHandle = async () => {
     try {
-      const response = await axios.post("http://localhost:3000/api/login", {
-        username: username,
-        password: password,
-      });
+      const response = await axios.post(
+        "https://instacard-qqat.onrender.com/api/login",
+        {
+          username: username,
+          password: password,
+        }
+      );
       localStorage.setItem("token", response.data.token);
       console.log("Login Successful");
       alert("Successfully loggedIn");
